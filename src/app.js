@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the_excuse").innerHTML = generatorexcuse();
+    document.querySelector("#url").innerHTML = generatorexcuse();
   });
   console.log("Hello Rigo from the console!");
 };
@@ -18,9 +18,9 @@ let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
 
 let nombres_url = "";
-for (p = 0; p < pron.length; p++) {
-  for (j = 0; j < adj.length; j++) {
-    for (n = 0; n < noun.length; n++) {
+for (let p = 0; p < pron.length; p++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let n = 0; n < noun.length; n++) {
       console.log(pron[p] + adj[j] + noun[n] + ".com");
     }
   }
